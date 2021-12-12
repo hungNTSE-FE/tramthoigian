@@ -42,16 +42,6 @@
 
     <!-- custom javascript -->
     <script src="/js/script.js?v=2.0" type="text/javascript"></script>
-
-    <style>
-      .d-block-block {
-        display: block !important;
-        /*added this below*/
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
   <body>
     <!-- PLUGIN MESSSENGER CHAT -->
@@ -92,9 +82,9 @@
       <section class="header-main border-bottom">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-2 col-lg-3 col-md-12">
+            <div class="col-xl-1 col-lg-3 col-md-12">
               <a href="#" class="brand-wrap">
-                <img class="logo" src="images/logo.png?v=2.0" />
+                <img class="img-sm" src="images/logo-tramthoigian.jpg" />
               </a>
               <!-- brand-wrap.// -->
               <!-- mobile-only -->
@@ -105,21 +95,30 @@
                 <a href="#" class="btn btn-light">
                   <i class="fa fa-shopping-cart"></i> 2
                 </a>
+                <a href="#" class="btn btn-light" data-toggle="dropdown">
+                  <i class="fas fa-bars"></i>
+                </a>
+                <ul class="dropdown-menu small">
+                  <li><a class="dropdown-item" href="#">Trang chủ</a></li>
+                  <li><a class="dropdown-item" href="#">GSHOCK</a></li>
+                  <li><a class="dropdown-item" href="#">BABY-G</a></li>
+                  <li><a class="dropdown-item" href="#">EDIFICE</a></li>
+                </ul>
               </div>
               <!-- mobile-only //end  -->
             </div>
-            <div class="col-xl-6 col-lg-5 col-md-6">
+            <div class="col-xl-7 col-lg-5 col-md-6">
               <form action="#" class="search-header">
-                <div class="input-group w-100">
+                <div class="input-group">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Search"
+                    placeholder="Tìm kiếm theo tên, mã sản phẩm"
                   />
 
                   <div class="input-group-append">
                     <button class="btn btn-primary" type="submit">
-                      <i class="fa fa-search"></i> Search
+                      <i class="fa fa-search"></i>
                     </button>
                   </div>
                 </div>
@@ -132,26 +131,52 @@
                 <div class="widget-header mr-3">
                   <a href="#" class="widget-view">
                     <div class="icon-area">
-                      <i class="fa fa-user"></i>
-                      <span class="notify">3</span>
+                      <i class="fa fa-home"></i>
                     </div>
-                    <small class="text"> My profile </small>
+                    <small class="text"> Trang chủ </small>
                   </a>
                 </div>
                 <div class="widget-header mr-3">
                   <a href="#" class="widget-view">
                     <div class="icon-area">
-                      <i class="fa fa-store"></i>
+                      <i class="fa fa-info-circle"></i>
                     </div>
-                    <small class="text"> Orders </small>
+                    <small class="text"> Giới thiệu</small>
                   </a>
                 </div>
-                <div class="widget-header">
+                <div class="widget-header mr-3 nav-item dropdown">
+                  <a href="#" class="widget-view" data-toggle="dropdown">
+                    <div class="icon-area">
+                      <i class="fa fa-store"></i>
+                    </div>
+                    <small class="text"> Sản phẩm</small>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">GSHOCK</a>
+                    <a class="dropdown-item" href="#">BABY-G</a>
+                    <a class="dropdown-item" href="#">EDIFICE</a>
+                  </div>
+                  <!--  dropdown-menu dropdown-large end.// -->
+                </div>
+                <div class="widget-header mr-3 nav-item dropdown">
+                  <a href="#" class="widget-view" data-toggle="dropdown">
+                    <div class="icon-area">
+                      <i class="fa fa-user"></i>
+                    </div>
+                    <small class="text"> My profile </small>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Chi tiết</a>
+                    <a class="dropdown-item" href="#">Đăng xuất</a>
+                  </div>
+                </div>
+                <div class="widget-header mr-3">
                   <a href="#" class="widget-view">
                     <div class="icon-area">
-                      <i class="fa fa-shopping-cart"></i>
+                      <i class="fa fa-shopping-basket"></i>
+                      <span class="notify">3</span>
                     </div>
-                    <small class="text"> Cart </small>
+                    <small class="text"> Giỏ hàng </small>
                   </a>
                 </div>
               </div>
@@ -164,44 +189,6 @@
         <!-- container.// -->
       </section>
       <!-- header-main .// -->
-
-      <nav class="navbar navbar-main navbar-expand-lg border-bottom">
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#main_nav"
-            aria-controls="main_nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="main_nav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">TRANG CHỦ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">G-SHOCK</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">EDIFICE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BABY-G</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">NỔI BẬT</a>
-              </li>
-            </ul>
-          </div>
-          <!-- collapse .// -->
-        </div>
-        <!-- container .// -->
-      </nav>
     </header>
     <!-- section-header.// -->
 
@@ -217,6 +204,7 @@
                   id="carousel1_indicator"
                   class="slider-home-banner carousel slide"
                   data-ride="carousel"
+                  data-interval="4000"
                 >
                   <ol class="carousel-indicators">
                     <li
@@ -283,16 +271,24 @@
               <!-- col.// -->
               <div class="col-md d-none d-lg-block flex-grow-1">
                 <aside class="special-home-right">
-                  <h6 class="bg-blue text-center text-white mb-0 p-2">
+                  <h6 class="bg-blue text-center text-white mb-0 p-2 rounded">
                     Nhãn hiệu nổi bật
                   </h6>
+                  <div class="card-banner border-bottom">
+                    <div class="py-3" style="width: 80%">
+                      <h6 class="card-title">Đồng hồ Casio</h6>
+                    </div>
+                    <img
+                      src="/images/items/MTG-B2000SKZ-1A.png"
+                      height="100"
+                      class="img-bg"
+                      style="padding-bottom: 5px"
+                    />
+                  </div>
 
                   <div class="card-banner border-bottom">
                     <div class="py-3" style="width: 80%">
                       <h6 class="card-title">Đồng hồ G-shock</h6>
-                      <a href="#" class="btn btn-secondary btn-sm">
-                        Chi tiết
-                      </a>
                     </div>
                     <img
                       src="/images/items/F-91W-1.jpeg"
@@ -305,9 +301,6 @@
                   <div class="card-banner border-bottom">
                     <div class="py-3" style="width: 80%">
                       <h6 class="card-title">Đồng hồ Edifice</h6>
-                      <a href="#" class="btn btn-secondary btn-sm">
-                        Chi tiết
-                      </a>
                     </div>
                     <img
                       src="/images/items/EDIFICE EFV-546SG-7AV.png"
@@ -320,9 +313,6 @@
                   <div class="card-banner border-bottom">
                     <div class="py-3" style="width: 80%">
                       <h6 class="card-title">Đồng hồ BABY-G</h6>
-                      <a href="#" class="btn btn-secondary btn-sm">
-                        Chi tiết
-                      </a>
                     </div>
                     <img
                       src="/images/items/BABY-G BLX-560VH-1.png"
@@ -351,7 +341,7 @@
 
         <div class="row row-sm">
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div href="#" class="card card-sm card-product-grid border">
+            <div href="#" class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <b class="badge badge-danger mr-1">10% OFF</b>
                 <img src="/images/items/F-91W-1.jpeg" />
@@ -371,7 +361,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <figure href="#" class="card card-sm card-product-grid">
+            <figure href="#" class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <b class="badge badge-danger mr-1">85% OFF</b>
                 <img src="/images/items/W-218H-1AV.jpeg" />
@@ -391,7 +381,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div href="#" class="card card-sm card-product-grid">
+            <div href="#" class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <b class="badge badge-danger mr-1">10% OFF</b>
                 <img src="/images/items/STANDARD F-105W-1A.png" />
@@ -411,7 +401,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div href="#" class="card card-sm card-product-grid">
+            <div href="#" class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <b class="badge badge-danger mr-1">90% OFF</b>
                 <img src="/images/items/STANDARD F-200W-9A.png" />
@@ -431,7 +421,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div href="#" class="card card-sm card-product-grid">
+            <div href="#" class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <b class="badge badge-danger mr-1">20% OFF</b>
                 <img src="/images/items/STANDARD AE-1200WHB-1BV.jpeg" />
@@ -451,7 +441,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div href="#" class="card card-sm card-product-grid">
+            <div href="#" class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <b class="badge badge-danger mr-1">20% OFF</b>
                 <img src="/images/items/STANDARD AE-1200WHB-3BV.jpeg" />
@@ -483,7 +473,7 @@
 
         <div class="row row-sm">
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/F-91W-1.jpeg" />
               </a>
@@ -499,7 +489,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/W-218H-1AV.jpeg" />
               </a>
@@ -515,7 +505,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/STANDARD F-105W-1A.png" />
               </a>
@@ -531,7 +521,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/STANDARD F-200W-9A.png" />
               </a>
@@ -547,7 +537,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/STANDARD AE-1200WHB-3BV.jpeg" />
               </a>
@@ -563,7 +553,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/STANDARD AE-1200WHB-1BV.jpeg" />
               </a>
@@ -579,7 +569,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/EDIFICE EFV-590D-2AV.png" />
               </a>
@@ -595,7 +585,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/EDIFICE EFR-569DB-1AV.png" />
               </a>
@@ -611,7 +601,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/EDIFICE EFV-570D-1AV.png" />
               </a>
@@ -627,7 +617,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/EDIFICE EFR-538BK-5AV.png" />
               </a>
@@ -643,7 +633,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/EDIFICE EFV-550D-7AV.png" />
               </a>
@@ -659,7 +649,7 @@
           </div>
           <!-- col.// -->
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
+            <div class="card card-sm card-product-grid rounded">
               <a href="#" class="img-wrap">
                 <img src="/images/items/EDIFICE EFV-546SG-7AV.png" />
               </a>
@@ -687,62 +677,52 @@
 
         <div class="row">
           <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
+            <article class="card card-post rounded">
               <img
                 src="/images/banners/edifice-banner1.jpeg"
                 class="card-img-top"
               />
               <div class="card-body">
                 <h6 class="title">ĐIỆN THOẠI SỐ TIÊU CHUẨN</h6>
-                <p class="small text-muted">
-                  Những mẫu Edifice với tính năng kết nối được với Smartphone vô
-                  cùng tiện lợi.
-                </p>
               </div>
             </article>
             <!-- card.// -->
           </div>
           <!-- col.// -->
           <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
+            <article class="card card-post rounded">
               <img
                 src="/images/banners/edifice-banner2.jpeg"
                 class="card-img-top"
               />
               <div class="card-body">
-                <h6 class="title">EDIFICE TOUGH SOLAR</h6>
-                <p class="small text-muted">
-                  Những mẫu Edifice được trang bị công nghệ Pin Tough Solar tự
-                  động sạc bằng năng lượng mặt trời
-                </p>
+                <h6 class="title">MẪU SỐ LƯỢNG CÓ ĐẶC BIỆT</h6>
               </div>
             </article>
             <!-- card.// -->
           </div>
           <!-- col.// -->
           <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
+            <article class="card card-post rounded">
               <img
                 src="/images/banners/edifice-banner3.jpeg"
                 class="card-img-top"
               />
               <div class="card-body">
-                <h6 class="title">THIẾT KẾ MỎNG</h6>
-                <p class="small text-muted">Easy Inspection</p>
+                <h6 class="title">HOÀN TOÀN BẰNG KIM LOẠI</h6>
               </div>
             </article>
             <!-- card.// -->
           </div>
           <!-- col.// -->
           <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
+            <article class="card card-post rounded">
               <img
                 src="/images/banners/edifice-banner4.jpeg"
                 class="card-img-top"
               />
               <div class="card-body">
                 <h6 class="title">ĐỒNG HỒ GHI THỜI GIAN TIÊU CHUẨN</h6>
-                <p class="small text-muted">Logistic services</p>
               </div>
             </article>
             <!-- card.// -->
@@ -842,7 +822,7 @@
           <p>
             Privacy Policy - Terms of Use - User Information Legal Enquiry Guide
           </p>
-          <p class="text-muted">&copy 2021 Company name, All rights reserved</p>
+          <p>&copy 2021 Company name, All rights reserved</p>
           <br />
         </section>
       </div>
