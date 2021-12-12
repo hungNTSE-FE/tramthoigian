@@ -1,6 +1,12 @@
 .mobile-block {
   display: none;
 }
+@media (max-width: 1218px) {
+  .mb-custom {
+    margin-bottom: 5px;
+  }
+}
+
 @media (max-width: 1140px) {
   .card-deal .col-heading {
     min-width: 280px;

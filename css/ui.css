@@ -79,8 +79,8 @@ a:hover {
   height: 40px;
 }
 .img-sm {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 .img-md {
   width: 140px;
@@ -426,8 +426,16 @@ p:last-child {
   background-color: #f6f7f9;
   z-index: 2;
 }
+
+.title-section-right {
+  position: relative;
+  display: inline-block;
+  float: right;
+  background-color: #f6f7f9;
+  z-index: 2;
+}
 .heading-line::before {
-  top: 35%;
+  top: 37%;
   border-radius: 7px;
   border-top-style: solid;
   content: "";
@@ -1496,4 +1504,80 @@ html[dir="rtl"] .itemside .info {
   padding-right: 15px;
   padding-left: initial;
 }
+
+.tempFixed .itemFixed {
+  margin-top: 10px;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.tempFixed .itemFixed.hotLine {
+  height: 64px;
+  width: 64px;
+  left: 15px;
+  bottom: 20px;
+  background: #dc1616;
+  border-radius: 100%;
+}
+
+.tempFixed .itemFixed.hotLine i {
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  color: #fff;
+}
+
+#fixed-social-network {
+  position: fixed;
+  top: 25%;
+  right: -125px;
+  z-index: 99999;
+}
+
+#fixed-social-network > a.fb-icon {
+  background: #3b5998;
+  color: #fff;
+}
+
+#fixed-social-network > a.ins-icon {
+  background: #c32aa3;
+  color: #fff;
+}
+
+#fixed-social-network > a.yt-icon {
+  background: #ff0000;
+  color: #fff;
+}
+
+#fixed-social-network > a#back-to-top {
+  background: #3954a6;
+  color: #fff;
+}
+
+#fixed-social-network > a {
+  border-radius: 3px;
+  height: 40px;
+  display: block;
+  width: 170px;
+  transform: translateX(0px);
+  margin-bottom: 5px;
+}
+
+#fixed-social-network > a > i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#fixed-social-network > .fb-icon:hover {
+  width: 300px;
+  transition: 1s;
+}
+
 /*# sourceMappingURL=ui.css.map */
