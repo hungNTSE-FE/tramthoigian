@@ -1534,34 +1534,55 @@ html[dir="rtl"] .itemside .info {
   color: #fff;
 }
 
-#fixed-social-network {
+#fixed-fb {
   position: fixed;
-  top: 25%;
+  top: 200px;
   right: -125px;
   z-index: 99999;
 }
 
-#fixed-social-network > a.fb-icon {
+#fixed-ins {
+  position: fixed;
+  top: 245px;
+  right: -125px;
+  z-index: 99999;
+}
+
+#fixed-yt {
+  position: fixed;
+  top: 290px;
+  right: -125px;
+  z-index: 99999;
+}
+
+#fixed-back {
+  position: fixed;
+  top: 335px;
+  right: -125px;
+  z-index: 99999;
+}
+
+#fixed-fb .fb-icon {
   background: #3b5998;
   color: #fff;
 }
 
-#fixed-social-network > a.ins-icon {
+#fixed-ins .ins-icon {
   background: #c32aa3;
   color: #fff;
 }
 
-#fixed-social-network > a.yt-icon {
+#fixed-yt .yt-icon {
   background: #ff0000;
   color: #fff;
 }
 
-#fixed-social-network > a#back-to-top {
+#fixed-back #back-to-top {
   background: #3954a6;
   color: #fff;
 }
 
-#fixed-social-network > a {
+#fixed-fb > a {
   border-radius: 3px;
   height: 40px;
   display: block;
@@ -1570,14 +1591,76 @@ html[dir="rtl"] .itemside .info {
   margin-bottom: 5px;
 }
 
-#fixed-social-network > a > i {
+#fixed-ins > a {
+  border-radius: 3px;
+  height: 40px;
+  display: block;
+  width: 170px;
+  transform: translateX(0px);
+  margin-bottom: 5px;
+}
+
+#fixed-yt > a {
+  border-radius: 3px;
+  height: 40px;
+  display: block;
+  width: 170px;
+  transform: translateX(0px);
+  margin-bottom: 5px;
+}
+
+#fixed-back #back-to-top {
+  border-radius: 3px;
+  height: 40px;
+  display: block;
+  width: 170px;
+  transform: translateX(0px);
+  margin-bottom: 5px;
+}
+
+#fixed-fb > a > i {
   margin-right: 20px;
   font-size: 20px;
 }
 
-#fixed-social-network > .fb-icon:hover {
+#fixed-ins > a > i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#fixed-yt > a > i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#fixed-back > a > i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#fixed-fb:hover .fb-icon {
   width: 300px;
   transition: 1s;
 }
+
+#fixed-ins:hover .ins-icon {
+  width: 300px;
+  transition: 1s;
+}
+
+#fixed-yt:hover .yt-icon {
+  width: 300px;
+  transition: 1s;
+}
+
+#fixed-back:hover #back-to-top {
+  width: 300px;
+  transition: 1s;
+}
+
+/* #fixed-social-network > .fb-icon:hover {
+  width: 300px;
+  transition: 1s;
+} */
 
 /*# sourceMappingURL=ui.css.map */
