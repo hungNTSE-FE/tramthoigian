@@ -1658,6 +1658,73 @@ html[dir="rtl"] .itemside .info {
   transition: 1s;
 }
 
+.blockTitle {
+  position: relative;
+  height: 45px;
+  background: #fff;
+  border-radius: 3px;
+  margin: 0px 0px 20px;
+}
+
+.blockTitle h2 {
+  display: inline-block;
+  background: #ff6a00;
+  padding: 0 8px 0 12px;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  float: left;
+  border-radius: 4px 0 0 4px;
+  color: #fff;
+  line-height: 45px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.blockTitle h2:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 22px solid transparent;
+  border-left: 15px solid;
+  border-left-color: #ff6a00;
+  border-right: 0 solid transparent;
+  border-bottom: 23px solid transparent;
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+
+.topAll {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+}
+
+.viewAll {
+  font-size: 13px;
+  color: #ff6a00;
+  border: 1px solid;
+  border-color: #ff6a00;
+  padding: 5px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: 600;
+  display: inline-block;
+  background: #fff;
+}
+
+.transition-3 {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.translateY-50 {
+  transform: translateY(-50%);
+}
 /* #fixed-social-network > .fb-icon:hover {
   width: 300px;
   transition: 1s;
