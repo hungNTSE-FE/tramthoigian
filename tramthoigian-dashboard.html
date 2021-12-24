@@ -58,47 +58,20 @@
       </div>
     </div>
 
-    <div id="fixed-social-network">
-      <div id="fixed-fb">
+    <!-- Circular Menu -->
+    <div id="circularMenu" class="circular-menu">
         <a
-          href="#"
-          class="fb-icon"
-          id="test-1"
-          style="line-height: 43px; padding: 0px 20px 0px 16px"
+          class="floating-btn"
+          onclick="document.getElementById('circularMenu').classList.toggle('active');"
         >
-          <i class="fab fa-facebook-f"></i> Facebook
+          <i class="fa fa-plus" style="color: #fff"></i>
         </a>
-      </div>
-      <div id="fixed-ins">
-        <a
-          href="#"
-          class="ins-icon"
-          id="test-2"
-          style="line-height: 45px; padding: 0px 20px 0px 14px"
-        >
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-      </div>
-      <div id="fixed-yt">
-        <a
-          href="#"
-          class="yt-icon"
-          id="test-3"
-          style="line-height: 45px; padding: 0px 20px 0px 12px"
-        >
-          <i class="fab fa-youtube"></i> Youtube
-        </a>
-      </div>
-      <div id="fixed-back">
-        <a
-          href="#top"
-          id="back-to-top"
-          id="test-4"
-          style="line-height: 43px; padding: 0px 20px 0px 17px"
-        >
-          <i class="fa fa-angle-up" aria-hidden="true"></i> Top
-        </a>
-      </div>
+  
+        <menu class="items-wrapper">
+          <a href="#" class="menu-item fab fa-facebook-f" style="background-color: #405d9d; color: #fff;"></a>
+          <a href="#" class="menu-item fab fa-instagram" style="background-color: #e52d27; color: #fff;"></a>
+          <a href="#" class="menu-item fab fa-youtube" style="background-color: #c8046c; color: #fff;"></a>
+        </menu>
     </div>
 
     <script>
