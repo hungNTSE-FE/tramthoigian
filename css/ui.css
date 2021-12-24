@@ -1506,35 +1506,6 @@ html[dir="rtl"] .itemside .info {
   padding-left: initial;
 }
 
-.tempFixed .itemFixed {
-  margin-top: 10px;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 10;
-}
-
-.tempFixed .itemFixed.hotLine {
-  height: 64px;
-  width: 64px;
-  left: 15px;
-  bottom: 20px;
-  background: #dc1616;
-  border-radius: 100%;
-}
-
-.tempFixed .itemFixed.hotLine i {
-  font-size: 30px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotateY(180deg);
-  color: #fff;
-}
-
 .blockTitle {
   position: relative;
   height: 45px;
@@ -1624,7 +1595,7 @@ html[dir="rtl"] .itemside .info {
 /* Start circular menu */
 .circular-menu {
   position: fixed;
-  bottom: 7em;
+  bottom: 7.5em;
   right: 25px;
   z-index: 10;
 }
