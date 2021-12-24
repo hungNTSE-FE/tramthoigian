@@ -1624,14 +1624,15 @@ html[dir="rtl"] .itemside .info {
 /* Start circular menu */
 .circular-menu {
   position: fixed;
-  top: 300px;
-  right: 1em;
+  bottom: 7em;
+  right: 25px;
+  z-index: 10;
 }
 
 .circular-menu .floating-btn {
   display: block;
-  width: 3.5em;
-  height: 3.5em;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #ff6a00;
   box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.26);
@@ -1651,7 +1652,8 @@ html[dir="rtl"] .itemside .info {
 }
 
 .circular-menu .floating-btn i {
-  font-size: 1.3em;
+  padding: 20px 0px 20px 2px;
+  font-size: 1.5em;
   transition: transform 0.2s;
 }
 
@@ -1708,15 +1710,19 @@ html[dir="rtl"] .itemside .info {
 }
 
 .circular-menu.active .menu-item:nth-child(1) {
-  transform: translate3d(-3em, -4em, 0);
+  transform: translate3d(0.5em, -4em, 0);
 }
 
 .circular-menu.active .menu-item:nth-child(2) {
-  transform: translate3d(-5.5em, 0em, 0);
+  transform: translate3d(-3em, -3em, 0);
 }
 
 .circular-menu.active .menu-item:nth-child(3) {
-  transform: translate3d(-3em, 4em, 0);
+  transform: translate3d(-4.5em, 0.3em, 0);
+}
+
+.circular-menu.active .menu-item:nth-child(4) {
+  transform: translate3d(-3em, 3.7em, 0);
 }
 /* End circular menu */
 /*# sourceMappingURL=ui.css.map */
