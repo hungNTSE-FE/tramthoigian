@@ -1720,7 +1720,7 @@ html[dir="rtl"] .itemside .info {
 .navigation ul li {
   position: relative;
   list-style: none;
-  width: 90px;
+  width: 80px;
   height: 70px;
   z-index: 1;
 }
@@ -1804,18 +1804,16 @@ html[dir="rtl"] .itemside .info {
 
 .navigation ul li:nth-child(1).active ~ .indicator {
   transform: translateX(calc(70px * 0));
+  margin-left: -4px;
 }
 .navigation ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(calc(90px * 1));
+  transform: translateX(calc(75px * 1));
 }
 .navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(calc(90px * 2));
+  transform: translateX(calc(78px * 2));
 }
 .navigation ul li:nth-child(4).active ~ .indicator {
-  transform: translateX(calc(90px * 3));
-}
-.navigation ul li:nth-child(5).active ~ .indicator {
-  transform: translateX(calc(90px * 4));
+  transform: translateX(calc(78.5px * 3));
 }
 /* Navigation Menu Indicator End */
 
