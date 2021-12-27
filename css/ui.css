@@ -1595,7 +1595,7 @@ html[dir="rtl"] .itemside .info {
 /* Start circular menu */
 .circular-menu {
   position: fixed;
-  bottom: 7.5em;
+  bottom: 10.7em;
   right: 25px;
   z-index: 10;
 }
