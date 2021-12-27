@@ -42,6 +42,10 @@
     display: none;
   }
 
+  .fixed-bottom {
+    display: block;
+  }
+
   .nav-home-aside {
     width: 100%;
     margin-bottom: 20px;
