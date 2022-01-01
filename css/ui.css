@@ -1832,4 +1832,27 @@ html[dir="rtl"] .itemside .info {
 }
 /* POSITION FIXED END */
 
+/* HOVER-IMAGE */
+/* Rollover Image */
+.rollover-image {
+  position: relative;
+  height: 100%;
+}
+.rollover-image .image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.rollover-image:hover img.image-hover {
+  opacity: 1;
+}
+/* HOVER-IMAGE-END */
+
 /*# sourceMappingURL=ui.css.map */
