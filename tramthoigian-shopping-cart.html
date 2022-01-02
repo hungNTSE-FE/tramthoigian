@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Trạm thời gian - Giỏ hàng</title>
+
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap4 files-->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font awesome 5 -->
+    <link
+      href="fonts/fontawesome/css/all.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <!-- custom style -->
+    <link href="css/ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- custom javascript -->
+    <script src="js/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- PLUGIN MESSSENGER CHAT -->
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <!-- Start Circular Menu -->
+    <div id="circularMenu" class="circular-menu">
+      <a
+        class="floating-btn"
+        onclick="document.getElementById('circularMenu').classList.toggle('active');"
+      >
+        <i class="fa fa-plus" style="color: #fff"></i>
+      </a>
+
+      <menu class="items-wrapper">
+        <a
+          href="#"
+          class="menu-item fab fa-facebook-f"
+          style="background-color: #405d9d; color: #fff"
+        ></a>
+        <a
+          href="#"
+          class="menu-item fab fa-instagram"
+          style="background-color: #e52d27; color: #fff"
+        ></a>
+        <a
+          href="#"
+          class="menu-item fab fa-youtube"
+          style="background-color: #c8046c; color: #fff"
+        ></a>
+        <a
+          href="tel:0946650045"
+          class="menu-item fa fa-phone"
+          style="background-color: #e52d27; color: #fff"
+          aria-hidden="true"
+        ></a>
+      </menu>
+    </div>
+    <!-- End Circular Menu -->
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "102364538973345");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v12.0",
+        });
+      };
+      //   END PLUGIN MESSENGER CHAT
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <header class="section-header" id="top">
+      <section class="header-main border-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-1 col-lg-3 col-md-12">
+              <a href="tramthoigian-dashboard.html" class="brand-wrap">
+                <img class="img-sm" src="images/logo-tramthoigian.png" />
+              </a>
+              <!-- brand-wrap.// -->
+              <!-- mobile-only -->
+              <div class="d-md-none float-right" style="">
+                <a href="#" class="btn btn-light">
+                  <i class="fa fa-user"></i>
+                </a>
+                <a href="#" class="btn btn-light">
+                  <i class="fa fa-shopping-cart"></i> 2
+                </a>
+                <a href="#" class="btn btn-light" data-toggle="dropdown">
+                  <i class="fas fa-bars"></i>
+                </a>
+                <ul class="dropdown-menu small">
+                  <li><a class="dropdown-item" href="#">Trang chủ</a></li>
+                  <li><a class="dropdown-item" href="#">Giới thiệu</a></li>
+                  <li><a class="dropdown-item" href="#">Sản phẩm</a></li>
+                </ul>
+              </div>
+              <!-- mobile-only //end  -->
+            </div>
+            <div class="col-xl-7 col-lg-5 col-md-6">
+              <form action="#" class="search-header">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Tìm kiếm theo tên, mã sản phẩm"
+                  />
+
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <!-- search-wrap .end// -->
+            </div>
+            <!-- col.// -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="widgets-wrap float-md-right nav-none">
+                <div class="widget-header mr-3">
+                  <a href="#" class="widget-view">
+                    <div class="icon-area">
+                      <i class="fa fa-home"></i>
+                    </div>
+                    <small class="text"> Trang chủ </small>
+                  </a>
+                </div>
+                <div class="widget-header mr-3">
+                  <a href="#" class="widget-view">
+                    <div class="icon-area">
+                      <i class="fa fa-info-circle"></i>
+                    </div>
+                    <small class="text"> Giới thiệu</small>
+                  </a>
+                </div>
+                <div class="widget-header mr-3 nav-item dropdown">
+                  <a href="#" class="widget-view" data-toggle="dropdown">
+                    <div class="icon-area">
+                      <i class="fa fa-store"></i>
+                    </div>
+                    <small class="text"> Sản phẩm</small>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">GSHOCK</a>
+                    <a class="dropdown-item" href="#">BABY-G</a>
+                    <a class="dropdown-item" href="#">EDIFICE</a>
+                  </div>
+                  <!--  dropdown-menu dropdown-large end.// -->
+                </div>
+                <div class="widget-header mr-3 nav-item dropdown">
+                  <a href="#" class="widget-view" data-toggle="dropdown">
+                    <div class="icon-area">
+                      <i class="fa fa-user"></i>
+                    </div>
+                    <small class="text"> My profile </small>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Chi tiết</a>
+                    <a class="dropdown-item" href="#">Đăng xuất</a>
+                  </div>
+                </div>
+                <div class="widget-header mr-3">
+                  <a href="#" class="widget-view">
+                    <div class="icon-area">
+                      <i class="fa fa-shopping-basket"></i>
+                      <span class="notify">3</span>
+                    </div>
+                    <small class="text"> Giỏ hàng </small>
+                  </a>
+                </div>
+              </div>
+              <!-- widgets-wrap.// -->
+            </div>
+            <!-- col.// -->
+          </div>
+          <!-- row.// -->
+        </div>
+        <!-- container.// -->
+
+        <!-- Announcement-bar-end -->
+      </section>
+      <!-- header-main .// -->
+    </header>
+    <!-- section-header.// -->
+
+    <!-- ========================= SECTION CONTENT ========================= -->
+    <section class="section-content padding-y">
+      <div class="container">
+        <div class="row">
+          <main class="col-md-9">
+            <div class="card">
+              <h3 style="text-align: center; padding-top: 10px">Giỏ hàng</h3>
+              <table class="table table-borderless table-shopping-cart">
+                <thead class="text-muted">
+                  <tr class="small text-uppercase">
+                    <th scope="col">SẢN PHẨM</th>
+                    <th scope="col" width="120">SỐ LƯỢNG</th>
+                    <th scope="col" width="120">GIÁ TIỀN</th>
+                    <th scope="col" class="text-right" width="200"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <figure class="itemside">
+                        <div class="aside">
+                          <img
+                            src="/images/items/F-91W-1.jpeg"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a href="#" class="title text-dark"
+                            >Casio A168WG-9W</a
+                          >
+                          <p class="text-muted small">
+                            Màu sắc: đen, <br />
+                            Thương hiệu: CASIO
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </td>
+                    <td>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price">1.208.840</var>
+                      </div>
+                      <!-- price-wrap .// -->
+                    </td>
+                    <td class="text-right">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                      >
+                        <i class="fa fa-heart"></i
+                      ></a>
+                      <a href="" class="btn btn-light"> Remove</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="card-body border-top">
+                <a href="#" class="btn btn-primary float-md-right">
+                  TIẾN HÀNH THANH TOÁN <i class="fa fa-chevron-right"></i>
+                </a>
+                <a href="#" class="btn btn-light">
+                  <i class="fa fa-chevron-left"></i> TIẾP TỤC MUA HÀNG
+                </a>
+              </div>
+            </div>
+            <!-- card.// -->
+
+            <div class="alert alert-success mt-3">
+              <p class="icontext">
+                <i class="icon text-success fa fa-truck"></i> Free Delivery
+                within 1-2 weeks
+              </p>
+            </div>
+          </main>
+          <!-- col.// -->
+          <aside class="col-md-3">
+            <div class="card mb-3">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label>Mã giảm giá?</label>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        placeholder="Coupon code"
+                      />
+                      <span class="input-group-append">
+                        <button class="btn btn-primary">Apply</button>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- card-body.// -->
+            </div>
+            <!-- card .// -->
+            <div class="card">
+              <div class="card-body">
+                <dl class="dlist-align">
+                  <dt>Tổng tiền:</dt>
+                  <dd class="text-right">USD 568</dd>
+                </dl>
+                <dl class="dlist-align">
+                  <dt>Giảm giá:</dt>
+                  <dd class="text-right">USD 658</dd>
+                </dl>
+                <dl class="dlist-align">
+                  <dt>Tổng giá:</dt>
+                  <dd class="text-right h5"><strong>$1,650</strong></dd>
+                </dl>
+                <hr />
+                <p class="text-center mb-3">
+                  <img src="images/misc/payments.png" height="26" />
+                </p>
+              </div>
+              <!-- card-body.// -->
+            </div>
+            <!-- card .// -->
+          </aside>
+          <!-- col.// -->
+        </div>
+      </div>
+      <!-- container .//  -->
+    </section>
+    <!-- ========================= SECTION CONTENT END// ========================= -->
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="section-footer" style="background: #ff8d00f5">
+      <div class="container">
+        <section class="footer-top padding-y-lg">
+          <div class="row">
+            <aside class="col-md-3 col-12">
+              <article class="mr-md-4">
+                <h5 class="title">THÔNG TIN LIÊN HỆ</h5>
+                <ul class="list-icon">
+                  <li>
+                    <i class="icon fa fa-map-marker"> </i>542 Fake Street,
+                    Cityname 10021 Netheerlends
+                  </li>
+                  <li><i class="icon fa fa-envelope"> </i> info@example.com</li>
+                  <li>
+                    <i class="icon fa fa-phone"> </i> (800) 060-0730, (800)
+                    060-0730
+                  </li>
+                  <li>
+                    <i class="icon fa fa-clock"> </i>Mon-Sat 10:00pm - 7:00pm
+                  </li>
+                </ul>
+              </article>
+            </aside>
+            <aside class="col-md-3 col-6">
+              <h6 class="title">DỊCH VỤ KHÁCH HÀNG</h6>
+              <ul class="list-unstyled">
+                <li><a href="#">Quy trình Giao dịch</a></li>
+                <li><a href="#">Thông tin chuyển khoản</a></li>
+                <li><a href="#">Đơn hàng & Thanh toán</a></li>
+                <li><a href="#">Giao hàng & Nhận hàng</a></li>
+                <li><a href="#">Chính sách đổi hàng</a></li>
+                <li><a href="#">Quy định bảo hành</a></li>
+              </ul>
+            </aside>
+            <aside class="col-md-3 col-12">
+              <h6 class="title">HÃY ĐỂ LẠI EMAIL ĐỂ NHẬN NHIỀU ƯU ĐÃI</h6>
+
+              <form class="form-inline mb-3">
+                <input
+                  type="text"
+                  placeholder="Đăng ký Email"
+                  class="border-0 w-auto form-control mr-1 mb-custom"
+                  name=""
+                />
+                <button class="btn btn-dark">Đăng ký</button>
+              </form>
+
+              <p class="text-black-50 mb-2">Follow us on social media</p>
+              <div class="mb-2">
+                <a href="#" class="btn btn-icon btn-outline-dark"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="btn btn-icon btn-outline-dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="btn btn-icon btn-outline-dark"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </aside>
+            <aside class="col-md col-6">
+              <h6 class="title">VỊ TRÍ CỬA HÀNG</h6>
+              <div id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.685878523107!2d105.73672201543879!3d21.0052251860111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453d9973d9921%3A0xdd1e2fbc9eccae11!2sVinhomes%20Smart%20City!5e0!3m2!1svi!2s!4v1639281657900!5m2!1svi!2s"
+                  width="320"
+                  height="160"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </aside>
+          </div>
+          <!-- row.// -->
+        </section>
+        <!-- footer-top.// -->
+        <section class="footer-bottom text-center">
+          <p>&copy Bản quyền thuộc về <a href="#">Tramthoigian.com</a></p>
+          <br />
+        </section>
+      </div>
+      <!-- //container -->
+    </footer>
+    <!-- ========================= FOOTER END // ========================= -->
+  </body>
+</html>
