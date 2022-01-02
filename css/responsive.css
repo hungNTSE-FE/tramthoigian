@@ -1,6 +1,13 @@
 .mobile-block {
   display: none;
 }
+
+@media (min-width: 750px) {
+  .dynamic-checkout {
+    margin-top: 1.5em;
+  }
+}
+
 @media (max-width: 1218px) {
   .mb-custom {
     margin-bottom: 5px;

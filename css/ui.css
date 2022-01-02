@@ -1906,4 +1906,85 @@ html[dir="rtl"] .itemside .info {
 }
 /* CUSTOM DETAIL PRODUCT END */
 
+/* CHECKOUT CSS */
+.dynamic-checkout__title {
+  color: #737373;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.dynamic-checkout__title:before {
+  border-right: 0;
+  border-top-left-radius: 5px;
+  margin-right: 1em;
+}
+.dynamic-checkout__title:after,
+.dynamic-checkout__title:before {
+  content: "";
+  border: 1px solid #e6e6e6;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  height: 0.5em;
+  margin-left: 1em;
+  flex: 1 0 2em;
+}
+.dynamic-checkout__content {
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0.9285714286em 1.4285714286em 1.4285714286em;
+}
+
+.checkbox-wrapper,
+.radio-wrapper {
+  display: table;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.checkbox-wrapper,
+.radio-wrapper {
+  zoom: 1;
+  margin-bottom: 1em;
+}
+.checkbox-wrapper:after,
+.checkbox-wrapper:before,
+.radio-wrapper:after,
+.radio-wrapper:before {
+  content: "";
+  display: table;
+}
+.display-table .checkbox__input,
+.display-table .radio__input {
+  display: table-cell;
+}
+.checkbox__input,
+.radio__input {
+  padding-right: 0.75em;
+  white-space: nowrap;
+}
+.input-checkbox:checked,
+.input-radio:checked {
+  border: none;
+  box-shadow: inset 0 0 0 10px #bb0909;
+}
+.main .input-checkbox,
+.main .input-radio {
+  border-color: #d9d9d9;
+  background-color: #fff;
+}
+
+.checkbox-wrapper:after,
+.radio-wrapper:after {
+  clear: both;
+}
+/* CHECKOUT CSS END */
+
 /*# sourceMappingURL=ui.css.map */
