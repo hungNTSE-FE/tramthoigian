@@ -1855,4 +1855,55 @@ html[dir="rtl"] .itemside .info {
 }
 /* HOVER-IMAGE-END */
 
+/* CUSTOM DETAIL PRODUCT */
+.dot--stocking {
+  background-color: #51a700;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin-right: 2px;
+  width: 10px;
+}
+
+.inventories_viewer {
+  background: #f4f3f3;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.btn-favorite {
+  background-image: linear-gradient(90deg, #252728, #252728);
+  margin-bottom: 10px;
+}
+
+.btn--full {
+  width: 100%;
+  padding: 13px 20px;
+}
+
+#event_message2_id a {
+  color: #067cc4;
+  font-size: 16px;
+}
+
+.product-benefits {
+  max-width: 478px;
+  margin: 0 auto 25px;
+}
+
+.product-benefits__item {
+  float: left;
+  text-align: center;
+  width: 20%;
+  margin: 0 2.5%;
+  color: #949494;
+  line-height: 19px;
+}
+
+.product-benefits__item i {
+  font-size: 32px;
+  margin-bottom: 7px;
+}
+/* CUSTOM DETAIL PRODUCT END */
+
 /*# sourceMappingURL=ui.css.map */
