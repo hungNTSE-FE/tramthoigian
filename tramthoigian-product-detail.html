@@ -229,22 +229,32 @@
               <article class="gallery-wrap">
                 <div class="img-big-wrap">
                   <div>
-                    <a href="#"><img src="/images/items/F-91W-1.jpeg" /></a>
+                    <a href="#">
+                      <img id="imageBox" src="/images/items/F-91W-1.jpeg" />
+                    </a>
                   </div>
                 </div>
                 <!-- slider-product.// -->
                 <div class="thumbs-wrap">
                   <a href="#" class="item-thumb">
-                    <img src="images/items/15.jpg"
+                    <img
+                      src="/images/items/F-91W-1.jpeg"
+                      onclick="myFunction(this)"
                   /></a>
                   <a href="#" class="item-thumb">
-                    <img src="images/items/15-1.jpg"
+                    <img
+                      src="images/items/STANDARD AE-1200WHB-1BV.jpeg"
+                      onclick="myFunction(this)"
                   /></a>
                   <a href="#" class="item-thumb">
-                    <img src="images/items/15-2.jpg"
+                    <img
+                      src="images/items/STANDARD F-105W-1A.png"
+                      onclick="myFunction(this)"
                   /></a>
                   <a href="#" class="item-thumb">
-                    <img src="images/items/15-1.jpg"
+                    <img
+                      src="images/items/W-218H-1AV.jpeg"
+                      onclick="myFunction(this)"
                   /></a>
                 </div>
                 <!-- slider-nav.// -->
@@ -410,7 +420,6 @@
           <!-- col.// -->
         </div>
         <!-- row.// -->
-
         <!-- ================ ITEM DETAIL END .// ================= -->
       </div>
       <!-- container .//  -->
@@ -810,5 +819,11 @@
       <!-- //container -->
     </footer>
     <!-- ========================= FOOTER END // ========================= -->
+    <script>
+      function myFunction(smallImg) {
+        var fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+      }
+    </script>
   </body>
 </html>
